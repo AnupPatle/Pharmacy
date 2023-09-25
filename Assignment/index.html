@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Pharmachy</h1>
+    </header>
+  <!--<img src="./pic.png">-->
+<nav>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Our Medicines</a>
+            <ul class="options1">
+                <li><a href="#">Fever</a></li>
+                <li><a href="#">Muscle Pains</a></li>
+                <li><a href="#">Cold & Cough</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Health Care</a>
+            <ul class="options2">
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Home Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pet Care</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Lab Test</a></li>
+    </ul>
+</nav>
+<section>
+<div class="animation-container">
+    
+   <img src="/Animation/ani1.jpg" >
+    <img src="/Animation/ani2.png">
+    <img src="/Animation/ani3.jpg">
+    <img src="/Animation/ani4.jpg">
+    <img src="/Animation/ani5.jpg">
+</div>
+</section>
+
+<section>
+<div class="productContainer">
+    <h2>Covid Care</h2>
+    <div class="product">
+        <h3>Covid Test Kit</h3>
+        <img src="/Products/c1.jpg">
+        <div>
+            Rs 40 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button>
+    </div>
+    <div class="product">  
+        <h3>Covid Essentials</h3>
+        <img src="/Products/c2.jpg">
+        <div>
+            Rs 240 <br/>
+            Offer: Rs 170/-
+        </div>
+        <button>Add to cart</button>
+    </div>
+    <div class="product"> 
+        <h3>Sanitizer Bottle</h3>
+        <img src="/Products/c3.jpg">
+        <div>
+            Rs 99 <br/>
+            Offer: Rs 87/-
+        </div>
+        <button>Add to cart</button>
+    </div>
+    <div class="product">
+        <h3>Mask</h3>
+        <img src="/Products/c4.jpg">
+        <div>
+            Rs 45 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button>
+    </div>
+</div>
+<div class="productContainer">
+    <h2>Diabetes Care</h2>
+    <div class="product">
+        <h3>Mask</h3>
+        <img src="/Products/d1.jpg">
+        <div>
+            Rs 45 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button> 
+    </div>
+    <div class="product">
+        <h3>Mask</h3>
+        <img src="/Products/d2.jpg">
+        <div>
+            Rs 45 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button>  
+    </div>
+    <div class="product">
+        <h3>Mask</h3>
+        <img src="/Products/d3.jpg">
+        <div>
+            Rs 45 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button> 
+    </div>
+    <div class="product">
+        <h3>Mask</h3>
+        <img src="/Products/d4.png">
+        <div>
+            Rs 45 <br/>
+            Offer: Rs 30/-
+        </div>
+        <button>Add to cart</button>
+    </div>
+</div>
+</section>
+
+
+<form action="Lab Test">
+    <div class="formContainer">
+        <h2>1. Your Contact Details</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Patient Id if exists">
+        <br>
+        <input type="number" placeholder="Contact Number">
+        <input type="email" placeholder="Email id"> 
+        
+        <h2>2. Address</h2>
+        <input type="text" placeholder="H-No">
+        <input type="text" placeholder="Street">
+        <br>
+        <input type="text" placeholder="Area">
+        <br>
+        <label for="districts">Districts:</label> 
+    <select name="districts" id="districts"> 
+        <option value="Gondia">Gondia</option> 
+        <option value="Bhandara">Bhandara</option> 
+        <option value="Nagpur">Nagpur</option> 
+        <option value="Amravati">Amravati</option> 
+        <option value="Yavatmal">Yavatmal</option> 
+        <option value="Akola">Akola</option> 
+    </select>
+
+    <br>
+<h2>3. Choose the Test Type</h2>
+
+    Check atleast one box without fail.
+    <br>
+      <input type="checkbox"  value="CBC" required> CBC
+    <br>
+      <input type="checkbox"  value="Complete Urine" required> Complete Urine
+    <br>
+      <input type="checkbox"  value="Lipid Profile" required> Lipid Profile
+    <br>
+      <input type="checkbox"  value="Thyroid Stimulating Hormone(TSH)" required> Thyroid Stimulating Hormone(TSH)
+    <br>
+      <input type="checkbox" name="testType" value="Glucose Test" required> Glucose Test
+    
+
+  <br>
+
+  <h2>4. Do you want a hard copy of the report also?</h2>
+  <label>
+    <input type="radio" name="agree" value="yes" required> Yes
+  </label>
+ 
+  <label>
+    <input type="radio" name="agree" value="no" required> No
+  </label>
+
+  <h2>5. Select Your Comfortable Date and Time</h2>
+  <label for="date">Select Date:</label>
+  <input type="date" id="date" name="date">
+  <br><br>
+  <label for="time">Select Time:</label>
+  <input type="time" id="time" name="time">
+  <br>
+  <button>Reset</button>
+  <button>Submit</button>
+
+  <div class="image">
+    <img src="/Lab-Test/lab-test.jpg" >
+  </div>
+</div>
+
+
+
+</form>
+<footer>@copyright. Only for demonstration purposes</footer>  
+</body>
+</html>
